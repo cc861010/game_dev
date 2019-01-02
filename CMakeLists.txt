@@ -78,7 +78,11 @@ target_link_libraries(model_loading glfw assimp)
 add_executable(httpTest src/httpTest.cpp)
 
 
+add_executable(color src/color.cpp ./glad/src/glad.c)
+target_link_libraries(color glfw)
 
+add_executable(basic_lighting_diffuse src/basic_lighting_diffuse.cpp ./glad/src/glad.c)
+target_link_libraries(basic_lighting_diffuse glfw)
 
 
 
