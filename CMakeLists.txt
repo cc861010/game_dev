@@ -84,9 +84,16 @@ target_link_libraries(color glfw)
 add_executable(basic_lighting_diffuse src/basic_lighting_diffuse.cpp ./glad/src/glad.c)
 target_link_libraries(basic_lighting_diffuse glfw)
 
+add_executable(basic_lighting_specular src/basic_lighting_specular.cpp ./glad/src/glad.c)
+target_link_libraries(basic_lighting_specular glfw)
 
+add_executable(materials src/materials.cpp ./glad/src/glad.c)
+target_link_libraries(materials glfw)
 
+add_executable(lighting_maps_diffuse src/lighting_maps_diffuse.cpp ./glad/src/glad.c)
+target_link_libraries(lighting_maps_diffuse glfw)
 
-
+add_executable(multiple_lights src/multiple_lights.cpp ./glad/src/glad.c)
+target_link_libraries(multiple_lights glfw)
 
 
